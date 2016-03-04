@@ -8,6 +8,7 @@
 
 #import "NavigationController.h"
 #import "Define.h"
+#import <FontAwesome.h>
 @interface NavigationController ()<UINavigationControllerDelegate>
 
 @end
@@ -16,7 +17,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self configData];
+    [self configUI];
+}
+
+/**配置数据*/
+- (void)configData{
     self.delegate = self;
+}
+
+/**配置UI*/
+- (void)configUI{
+    self.navigationBar.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning {

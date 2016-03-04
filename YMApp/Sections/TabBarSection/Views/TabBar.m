@@ -40,7 +40,7 @@
         [btn addTarget:self action:@selector(clicked:) forControlEvents:UIControlEventTouchUpInside];
         [btn setImage:model.normalImage forState:UIControlStateNormal];
         [btn setImage:model.selectImage forState:UIControlStateSelected];
-        
+        btn.adjustsImageWhenHighlighted = NO;
          __weak UIButton *lastBtn = [tempBtnArray lastObject];
         if (i == 0) {
             btn.selected = YES;

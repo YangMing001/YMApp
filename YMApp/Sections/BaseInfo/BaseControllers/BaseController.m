@@ -8,7 +8,7 @@
 
 #import "BaseController.h"
 
-@interface BaseController ()
+@interface BaseController ()<NavigationBarDelegate>
 
 @end
 
@@ -16,32 +16,63 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self configData];
     [self configUI];
+    [self configData];
+
 }
 
 /**配置数据*/
 - (void)configData{
+    _navBar.leftType = NavBarLeftTypeBack;
 }
 
 /**配置UI*/
 - (void)configUI{
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+    _navBar = [NavigationBar new];
+    _navBar.delegate = self;
+    [self.view addSubview:_navBar];
+    WeakOBJ(weakSelf);
+    [_navBar mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.and.top.with.trailing.equalTo(weakSelf.view);
+        make.height.mas_equalTo(@64);
+    }];
+    
+    if (self.title) {
+        self.navBar.title = self.title;
+    }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setNavBarHide:(BOOL)navBarHide{
+    _navBarHide = navBarHide;
+    _navBar.hidden = _navBarHide;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark -NavBarDelegate
+- (void)navBarView:(NavigationBar *)navBarView leftClicked:(id)sender{
+    [self leftClick];
 }
-*/
+
+- (void)navBarView:(NavigationBar *)navBarView rightClicked:(id)sender{
+    [self rightClick];
+}
+
+- (void)leftClick{
+    if (self.navigationController.topViewController == self.navigationController.visibleViewController) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }else{
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+}
+
+- (void)rightClick{
+    //to do something
+}
+
+//设置状态栏的（亮色）白色
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
 
 @end

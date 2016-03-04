@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+#import "NavigationBar.h"
+
 @interface BaseController : UIViewController
+
+@property (nonatomic,strong) NavigationBar *navBar;
+@property (nonatomic,getter=isNavBarHide) BOOL navBarHide;
+- (void)leftClick;
+- (void)rightClick;
+
 
 @end
