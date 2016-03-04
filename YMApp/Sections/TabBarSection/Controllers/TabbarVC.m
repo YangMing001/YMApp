@@ -8,8 +8,14 @@
 
 #import "TabbarVC.h"
 #import "TabBarHelper.h"
-@interface TabbarVC ()<UITabBarControllerDelegate>
+#import "TabBar.h"
 
+#import "Define.h"
+
+@interface TabbarVC ()<UITabBarControllerDelegate>
+{
+    TabBar *_bar;
+}
 @end
 
 @implementation TabbarVC
@@ -17,18 +23,40 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self configUI];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showTabbar) name:Notification_ShowTabBar object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideTabbar) name:Notification_HideTabBar object:nil];
 }
 
 /**配置UI*/
 - (void)configUI{
     self.tabBar.hidden = YES;
-    NSArray *controllerModels = [TabBarHelper tabBarControllers];
+    self.viewControllers = [TabBarHelper tabBarControllers];
     
-    NSMutableArray *ctrls = [NSMutableArray array];
-    for (NSInteger i = 0; i < controllerModels.count ; i++) {
-        [ctrls addObject:[controllerModels[i] controller]];
-    }
-    self.viewControllers = [ctrls copy];
+    _bar = [[TabBar alloc] initWithImages:[TabBarHelper tabBarControllerModels]];
+    _bar.delegate = self;
+    [self.view addSubview:_bar];
+    
+    __weak typeof(self) weakSelf = self;
+    [_bar mas_makeConstraints:^(MASConstraintMaker *make) {
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        make.leading.and.trailing.equalTo(strongSelf.view);
+        make.bottom.equalTo(strongSelf.view);
+        make.height.mas_equalTo([NSNumber numberWithInteger:high_Tabbar]);
+    }];
+}
+
+- (void)hideTabbar{
+    [_bar mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo([NSNumber numberWithInteger:0]);
+
+    }];
+}
+
+- (void)showTabbar{
+    [_bar mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo([NSNumber numberWithInteger:high_Tabbar]);
+    }];
 }
 
 

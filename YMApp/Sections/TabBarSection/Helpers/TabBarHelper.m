@@ -18,7 +18,7 @@
 #import <FontAwesomeTools/FontAwesome.h>
 @implementation TabBarHelper
 
-+ (NSArray<ControllerModel *> *)tabBarControllers{
++ (NSArray<ControllerModel *> *)tabBarControllerModels{
    
     HomeVC *homeVc = [HomeVC new];
     homeVc.title = @"首页";
@@ -38,6 +38,16 @@
     ControllerModel *ShopModel = [TabBarHelper ctrlModelWithVC:shopVC iconName:fa_envelope];
 
     return @[homeModel,OrderModel,ShopModel,MineModel];
+}
+
++ (NSArray<UIViewController *> *)tabBarControllers{
+    NSArray *controllerModels = [TabBarHelper tabBarControllerModels];
+    
+    NSMutableArray *ctrls = [NSMutableArray array];
+    for (NSInteger i = 0; i < controllerModels.count ; i++) {
+        [ctrls addObject:[controllerModels[i] controller]];
+    }
+    return [ctrls copy];
 }
 
 + (ControllerModel *)ctrlModelWithVC:(UIViewController *)vc iconName:(NSString *)iconName{

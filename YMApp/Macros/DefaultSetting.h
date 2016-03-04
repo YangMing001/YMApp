@@ -9,7 +9,8 @@
 #ifndef DefaultSetting_h
 #define DefaultSetting_h
 
-
-#define iconSize_Tabbar (30)    //tabbar icon大小
+/**Tabbar 数值*/
+#define iconSize_Tabbar (30)   //tabbar icon大小
+#define high_Tabbar     (49)   //tabbar高度
 
 #endif /* DefaultSetting_h */

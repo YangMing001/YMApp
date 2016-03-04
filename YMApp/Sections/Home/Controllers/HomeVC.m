@@ -7,7 +7,7 @@
 //
 
 #import "HomeVC.h"
-
+#import "SecondVC.h"
 @interface HomeVC ()
 
 @end
@@ -21,6 +21,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    SecondVC *vc = [SecondVC new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 /*

@@ -11,6 +11,8 @@
 
 @interface TabBarHelper : BaseHelper
 
-+ (NSArray<ControllerModel *> *)tabBarControllers;
++ (NSArray<UIViewController *> *)tabBarControllers;
+
++ (NSArray<ControllerModel *> *)tabBarControllerModels;
 
 @end

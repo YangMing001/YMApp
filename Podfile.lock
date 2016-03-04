@@ -36,15 +36,18 @@ PODS:
   - FontAwesomeKit/Zocial (2.2.0):
     - FontAwesomeKit/Core
   - FontAwesomeTools (1.2)
+  - Masonry (0.6.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - FontAwesomeKit (~> 2.2.0)
   - FontAwesomeTools (~> 1.2)
+  - Masonry (~> 0.6.4)
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   FontAwesomeKit: 025fd4dd1017fe4e3f8d47b03e024deedbb33cd4
   FontAwesomeTools: bd6e4882eed916ed07f8d0ff0fc2972c77640d27
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
 
 COCOAPODS: 0.37.2

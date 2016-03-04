@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ControllerModel.h"
+#import "BaseView.h"
 
-@interface TabBar : UITabBar
+@interface TabBar :BaseView
+
+@property (nonatomic,weak) UITabBarController *delegate;
+
+- (instancetype)initWithImages:(NSArray<ControllerModel *> *)images;
 
 @end

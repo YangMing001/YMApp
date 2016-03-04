@@ -1,32 +1,22 @@
 //
-//  BaseController.m
+//  SecondVC.m
 //  YMApp
 //
-//  Created by YM on 16/3/3.
+//  Created by YM on 16/3/4.
 //  Copyright © 2016年 YM. All rights reserved.
 //
 
-#import "BaseController.h"
+#import "SecondVC.h"
 
-@interface BaseController ()
+@interface SecondVC ()
 
 @end
 
-@implementation BaseController
+@implementation SecondVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self configData];
-    [self configUI];
-}
-
-/**配置数据*/
-- (void)configData{
-}
-
-/**配置UI*/
-- (void)configUI{
-    self.view.backgroundColor = [UIColor redColor];
+    self.title = @"----";
 }
 
 - (void)didReceiveMemoryWarning {

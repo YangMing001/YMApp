@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Masonry.h>
 
+#import "Define.h"
 @interface BaseView : UIView
 
 @end

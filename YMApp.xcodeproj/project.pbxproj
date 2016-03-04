@@ -31,6 +31,7 @@
 		993EBDFA1C87EFCF007B6399 /* TabBarHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 993EBDF91C87EFCF007B6399 /* TabBarHelper.m */; };
 		993EBDFD1C87F0F0007B6399 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993EBDFC1C87F0F0007B6399 /* NavigationController.m */; };
 		9977F3EA1C8816D7009C9306 /* UIImage+IconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 9977F3E91C8816D7009C9306 /* UIImage+IconFont.m */; };
+		99D90BF51C8953FF001C36B1 /* SecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D90BF41C8953FF001C36B1 /* SecondVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,11 @@
 		9977F3E81C8816D7009C9306 /* UIImage+IconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+IconFont.h"; sourceTree = "<group>"; };
 		9977F3E91C8816D7009C9306 /* UIImage+IconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+IconFont.m"; sourceTree = "<group>"; };
 		9977F3EB1C882919009C9306 /* DefaultSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultSetting.h; sourceTree = "<group>"; };
+		99D90BF11C893D7E001C36B1 /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		99D90BF21C895311001C36B1 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		99D90BF31C8953FF001C36B1 /* SecondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondVC.h; sourceTree = "<group>"; };
+		99D90BF41C8953FF001C36B1 /* SecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondVC.m; sourceTree = "<group>"; };
+		99D90BF61C896FD7001C36B1 /* NotificationDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationDefine.h; sourceTree = "<group>"; };
 		E39AEDFC752ECCD967068FD4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -301,6 +307,8 @@
 			children = (
 				993EBDE91C87EE60007B6399 /* HomeVC.h */,
 				993EBDEA1C87EE60007B6399 /* HomeVC.m */,
+				99D90BF31C8953FF001C36B1 /* SecondVC.h */,
+				99D90BF41C8953FF001C36B1 /* SecondVC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -547,6 +555,9 @@
 			isa = PBXGroup;
 			children = (
 				9977F3EB1C882919009C9306 /* DefaultSetting.h */,
+				99D90BF11C893D7E001C36B1 /* Tools.h */,
+				99D90BF21C895311001C36B1 /* Define.h */,
+				99D90BF61C896FD7001C36B1 /* NotificationDefine.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -805,6 +816,7 @@
 				993EBDD01C87ED00007B6399 /* BaseController.m in Sources */,
 				9977F3EA1C8816D7009C9306 /* UIImage+IconFont.m in Sources */,
 				993EBDE81C87EE2D007B6399 /* NavigationBar.m in Sources */,
+				99D90BF51C8953FF001C36B1 /* SecondVC.m in Sources */,
 				993EBDEE1C87EE71007B6399 /* MineVC.m in Sources */,
 				993EBD711C87E65C007B6399 /* main.m in Sources */,
 				993EBDD31C87ED14007B6399 /* BaseHelper.m in Sources */,
@@ -898,7 +910,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -936,7 +948,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -7,8 +7,8 @@
 //
 
 #import "NavigationController.h"
-
-@interface NavigationController ()
+#import "Define.h"
+@interface NavigationController ()<UINavigationControllerDelegate>
 
 @end
 
@@ -16,11 +16,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    if (viewController == [self.viewControllers firstObject]) {
+        //rootViewController
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [[NSNotificationCenter defaultCenter] postNotificationName:Notification_ShowTabBar object:nil];
+        });
+    }
+}
+
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    NSInteger index = [navigationController.viewControllers indexOfObject:viewController];
+    if (index ==1) {
+        //上级页面为Root
+        [[NSNotificationCenter defaultCenter] postNotificationName:Notification_HideTabBar object:nil];
+    }
+}
+
 
 /*
 #pragma mark - Navigation
