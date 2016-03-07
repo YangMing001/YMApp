@@ -48,7 +48,7 @@
 - (void)setupViews{
     self.backgroundColor = [UIColor clearColor];
     _navBackgroundView = [UIView new];
-    _navBackgroundView.backgroundColor = [UIColor orangeColor];
+    _navBackgroundView.backgroundColor = [ColorConfiger colorMain];
     [self addSubview:_navBackgroundView];
     __weak typeof(self) weakSelf = self;
     [self.navBackgroundView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -79,7 +79,7 @@
     }];
     
     ((UILabel *)_rightItemView).font            = [UIFont boldSystemFontOfSize:18];
-    ((UILabel *)_rightItemView).textColor       = [UIColor whiteColor];
+    ((UILabel *)_rightItemView).textColor       = [ColorConfiger colorTextNav];
     ((UILabel *)_rightItemView).shadowColor     = [UIColor redColor];
     ((UILabel *)_rightItemView).shadowOffset    = CGSizeMake(1.0,1.0);
     ((UILabel *)_rightItemView).lineBreakMode   = NSLineBreakByWordWrapping;//截去中间
@@ -89,6 +89,10 @@
 
 - (void)setTitle:(NSString *)title{
     _title = title;
+    
+    if ([self.delegate respondsToSelector:@selector(setTitle:)]) {
+        [self.delegate performSelector:@selector(setTitle:) withObject:_title];
+    }
     if (_titleView) {
         [_titleView removeFromSuperview];
     }
@@ -101,7 +105,7 @@
         make.centerY.equalTo(weakSelf).offset(10);
     }];
     ((UILabel *)_titleView).font            = [UIFont boldSystemFontOfSize:24];
-    ((UILabel *)_titleView).textColor       = [UIColor whiteColor];
+    ((UILabel *)_titleView).textColor       = [ColorConfiger colorTextNav];
     ((UILabel *)_titleView).shadowColor     = [UIColor redColor];
     ((UILabel *)_titleView).shadowOffset    = CGSizeMake(1.0,1.0);
     ((UILabel *)_titleView).lineBreakMode   = NSLineBreakByWordWrapping;//截去中间
@@ -134,7 +138,7 @@
         make.edges.equalTo(weakSelf.leftItemView).with.insets(UIEdgeInsetsMake(0, 0, 0, 0));
     }];
     ((UILabel *)_leftItemView).font            = [UIFont boldSystemFontOfSize:18];
-    ((UILabel *)_leftItemView).textColor       = [UIColor whiteColor];
+    ((UILabel *)_leftItemView).textColor       = [ColorConfiger colorTextNav];
     ((UILabel *)_leftItemView).shadowColor     = [UIColor redColor];
     ((UILabel *)_leftItemView).shadowOffset    = CGSizeMake(1.0,1.0);
     ((UILabel *)_leftItemView).lineBreakMode   = NSLineBreakByWordWrapping;//截去中间

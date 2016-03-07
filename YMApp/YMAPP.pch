@@ -1,0 +1,20 @@
+//
+//  YMAPP.pch
+//  YMApp
+//
+//  Created by YM on 16/3/4.
+//  Copyright © 2016年 YM. All rights reserved.
+//
+
+#ifndef YMAPP_pch
+#define YMAPP_pch
+
+#import <UIKit/UIKit.h>
+#import "ColorConfiger.h"
+#import "Define.h"
+#import <Bugly/BuglyLog.h>
+#import <Bugly/CrashReporter.h>
+#import "TalkingData.h"
+
+
+#endif /* YMAPP_pch */

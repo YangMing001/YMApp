@@ -18,7 +18,6 @@
     [super viewDidLoad];
     [self configUI];
     [self configData];
-
 }
 
 /**配置数据*/
@@ -26,9 +25,19 @@
     _navBar.leftType = NavBarLeftTypeBack;
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [TalkingData trackPageBegin:self.title];
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+    [TalkingData trackPageEnd:self.title];
+    [super viewDidDisappear:animated];
+}
+
 /**配置UI*/
 - (void)configUI{
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [ColorConfiger colorViewBG];
     _navBar = [NavigationBar new];
     _navBar.delegate = self;
     [self.view addSubview:_navBar];
@@ -69,10 +78,9 @@
     //to do something
 }
 
-//设置状态栏的（亮色）白色
--(UIStatusBarStyle)preferredStatusBarStyle
-{
-    return UIStatusBarStyleLightContent;
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 @end

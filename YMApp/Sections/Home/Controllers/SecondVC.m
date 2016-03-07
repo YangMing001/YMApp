@@ -7,7 +7,7 @@
 //
 
 #import "SecondVC.h"
-
+#import "Gauge.h"
 @interface SecondVC ()
 
 @end
@@ -16,7 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     self.title = @"----";
+    
+    Gauge *g = [[Gauge alloc] initWithFrame:CGRectMake(0, 100, CGRectGetWidth(self.view.frame), CGRectGetWidth(self.view.frame))];
+    [self.view addSubview:g];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "TabbarVC.h"
+#import "AppDelegateHelper.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,11 +18,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [AppDelegateHelper setupAnalyseLib];
     
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     TabbarVC *vc = [TabbarVC new];
     self.window.rootViewController = vc;
-
     [self.window makeKeyAndVisible];
     
     return YES;

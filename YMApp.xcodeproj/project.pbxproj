@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		87222A0834C1AF04FB014EEE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27182D56CAAC97867923A51E /* libPods.a */; };
+		993C4DD41C8D499F00C0E8A9 /* libTalkingData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 993C4DD21C8D499F00C0E8A9 /* libTalkingData.a */; };
+		993C4DD61C8D4A1F00C0E8A9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993C4DD51C8D4A1F00C0E8A9 /* Security.framework */; };
+		993C4DD81C8D4A2B00C0E8A9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993C4DD71C8D4A2B00C0E8A9 /* CoreTelephony.framework */; };
+		993C4DDA1C8D4A3200C0E8A9 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993C4DD91C8D4A3200C0E8A9 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		993C4DDC1C8D4A5300C0E8A9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993C4DDB1C8D4A5300C0E8A9 /* SystemConfiguration.framework */; };
+		993C4DDE1C8D4A5F00C0E8A9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 993C4DDD1C8D4A5F00C0E8A9 /* libz.tbd */; };
+		993C4DE01C8D4A6D00C0E8A9 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993C4DDF1C8D4A6D00C0E8A9 /* CoreMotion.framework */; };
 		993EBD711C87E65C007B6399 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 993EBD701C87E65C007B6399 /* main.m */; };
 		993EBD741C87E65C007B6399 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 993EBD731C87E65C007B6399 /* AppDelegate.m */; };
 		993EBD7A1C87E65C007B6399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 993EBD781C87E65C007B6399 /* Main.storyboard */; };
@@ -31,7 +38,12 @@
 		993EBDFA1C87EFCF007B6399 /* TabBarHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 993EBDF91C87EFCF007B6399 /* TabBarHelper.m */; };
 		993EBDFD1C87F0F0007B6399 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993EBDFC1C87F0F0007B6399 /* NavigationController.m */; };
 		9977F3EA1C8816D7009C9306 /* UIImage+IconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 9977F3E91C8816D7009C9306 /* UIImage+IconFont.m */; };
+		99969C8A1C8D4E23008BD7D5 /* AppDelegateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 99969C891C8D4E23008BD7D5 /* AppDelegateHelper.m */; };
 		99D90BF51C8953FF001C36B1 /* SecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D90BF41C8953FF001C36B1 /* SecondVC.m */; };
+		99D90BF91C89DFDF001C36B1 /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D90BF81C89DFDF001C36B1 /* UIColor+Tools.m */; };
+		99D90BFC1C89E174001C36B1 /* ColorConfiger.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D90BFB1C89E174001C36B1 /* ColorConfiger.m */; };
+		99D90C001C89F0CD001C36B1 /* Gauge.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D90BFF1C89F0CD001C36B1 /* Gauge.m */; };
+		99E9DCF21C8AA1DC001FC5AC /* DialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E9DCF11C8AA1DC001FC5AC /* DialView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +66,14 @@
 /* Begin PBXFileReference section */
 		27182D56CAAC97867923A51E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3E16A527547F3C51F3B2C4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		993C4DD21C8D499F00C0E8A9 /* libTalkingData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTalkingData.a; sourceTree = "<group>"; };
+		993C4DD31C8D499F00C0E8A9 /* TalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingData.h; sourceTree = "<group>"; };
+		993C4DD51C8D4A1F00C0E8A9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		993C4DD71C8D4A2B00C0E8A9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		993C4DD91C8D4A3200C0E8A9 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		993C4DDB1C8D4A5300C0E8A9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		993C4DDD1C8D4A5F00C0E8A9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		993C4DDF1C8D4A6D00C0E8A9 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		993EBD6C1C87E65C007B6399 /* YMApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		993EBD701C87E65C007B6399 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		993EBD721C87E65C007B6399 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,11 +121,23 @@
 		9977F3E81C8816D7009C9306 /* UIImage+IconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+IconFont.h"; sourceTree = "<group>"; };
 		9977F3E91C8816D7009C9306 /* UIImage+IconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+IconFont.m"; sourceTree = "<group>"; };
 		9977F3EB1C882919009C9306 /* DefaultSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultSetting.h; sourceTree = "<group>"; };
+		99969C871C8D4CBF008BD7D5 /* APPKEY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPKEY.h; sourceTree = "<group>"; };
+		99969C881C8D4E23008BD7D5 /* AppDelegateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegateHelper.h; sourceTree = "<group>"; };
+		99969C891C8D4E23008BD7D5 /* AppDelegateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateHelper.m; sourceTree = "<group>"; };
 		99D90BF11C893D7E001C36B1 /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		99D90BF21C895311001C36B1 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		99D90BF31C8953FF001C36B1 /* SecondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondVC.h; sourceTree = "<group>"; };
 		99D90BF41C8953FF001C36B1 /* SecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondVC.m; sourceTree = "<group>"; };
 		99D90BF61C896FD7001C36B1 /* NotificationDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationDefine.h; sourceTree = "<group>"; };
+		99D90BF71C89DFDF001C36B1 /* UIColor+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
+		99D90BF81C89DFDF001C36B1 /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
+		99D90BFA1C89E174001C36B1 /* ColorConfiger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorConfiger.h; sourceTree = "<group>"; };
+		99D90BFB1C89E174001C36B1 /* ColorConfiger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorConfiger.m; sourceTree = "<group>"; };
+		99D90BFD1C89E613001C36B1 /* YMAPP.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAPP.pch; sourceTree = "<group>"; };
+		99D90BFE1C89F0CD001C36B1 /* Gauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gauge.h; sourceTree = "<group>"; };
+		99D90BFF1C89F0CD001C36B1 /* Gauge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gauge.m; sourceTree = "<group>"; };
+		99E9DCF01C8AA1DC001FC5AC /* DialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialView.h; sourceTree = "<group>"; };
+		99E9DCF11C8AA1DC001FC5AC /* DialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialView.m; sourceTree = "<group>"; };
 		E39AEDFC752ECCD967068FD4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +146,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				993C4DE01C8D4A6D00C0E8A9 /* CoreMotion.framework in Frameworks */,
+				993C4DDE1C8D4A5F00C0E8A9 /* libz.tbd in Frameworks */,
+				993C4DDC1C8D4A5300C0E8A9 /* SystemConfiguration.framework in Frameworks */,
+				993C4DDA1C8D4A3200C0E8A9 /* AdSupport.framework in Frameworks */,
+				993C4DD81C8D4A2B00C0E8A9 /* CoreTelephony.framework in Frameworks */,
+				993C4DD61C8D4A1F00C0E8A9 /* Security.framework in Frameworks */,
+				993C4DD41C8D499F00C0E8A9 /* libTalkingData.a in Frameworks */,
 				87222A0834C1AF04FB014EEE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +181,15 @@
 				E39AEDFC752ECCD967068FD4 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		993C4DD11C8D499F00C0E8A9 /* TalkingData */ = {
+			isa = PBXGroup;
+			children = (
+				993C4DD21C8D499F00C0E8A9 /* libTalkingData.a */,
+				993C4DD31C8D499F00C0E8A9 /* TalkingData.h */,
+			);
+			path = TalkingData;
 			sourceTree = "<group>";
 		};
 		993EBD631C87E65C007B6399 = {
@@ -190,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				993EBD701C87E65C007B6399 /* main.m */,
+				99D90BFD1C89E613001C36B1 /* YMAPP.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -330,6 +379,10 @@
 		993EBDAE1C87ECA2007B6399 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				99D90BFE1C89F0CD001C36B1 /* Gauge.h */,
+				99D90BFF1C89F0CD001C36B1 /* Gauge.m */,
+				99E9DCF01C8AA1DC001FC5AC /* DialView.h */,
+				99E9DCF11C8AA1DC001FC5AC /* DialView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -531,6 +584,10 @@
 		993EBDC71C87ECA2007B6399 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				99D90BFA1C89E174001C36B1 /* ColorConfiger.h */,
+				99D90BFB1C89E174001C36B1 /* ColorConfiger.m */,
+				99969C881C8D4E23008BD7D5 /* AppDelegateHelper.h */,
+				99969C891C8D4E23008BD7D5 /* AppDelegateHelper.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -540,6 +597,8 @@
 			children = (
 				9977F3E81C8816D7009C9306 /* UIImage+IconFont.h */,
 				9977F3E91C8816D7009C9306 /* UIImage+IconFont.m */,
+				99D90BF71C89DFDF001C36B1 /* UIColor+Tools.h */,
+				99D90BF81C89DFDF001C36B1 /* UIColor+Tools.m */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -547,6 +606,7 @@
 		993EBDC91C87ECA2007B6399 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				993C4DD11C8D499F00C0E8A9 /* TalkingData */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -558,6 +618,7 @@
 				99D90BF11C893D7E001C36B1 /* Tools.h */,
 				99D90BF21C895311001C36B1 /* Define.h */,
 				99D90BF61C896FD7001C36B1 /* NotificationDefine.h */,
+				99969C871C8D4CBF008BD7D5 /* APPKEY.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -631,6 +692,12 @@
 		E0327F524ACB03D6DF6D55F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				993C4DDF1C8D4A6D00C0E8A9 /* CoreMotion.framework */,
+				993C4DDD1C8D4A5F00C0E8A9 /* libz.tbd */,
+				993C4DDB1C8D4A5300C0E8A9 /* SystemConfiguration.framework */,
+				993C4DD91C8D4A3200C0E8A9 /* AdSupport.framework */,
+				993C4DD71C8D4A2B00C0E8A9 /* CoreTelephony.framework */,
+				993C4DD51C8D4A1F00C0E8A9 /* Security.framework */,
 				27182D56CAAC97867923A51E /* libPods.a */,
 			);
 			name = Frameworks;
@@ -648,6 +715,7 @@
 				993EBD691C87E65C007B6399 /* Frameworks */,
 				993EBD6A1C87E65C007B6399 /* Resources */,
 				BFCCC3A3D30B82A326AEEA22 /* Copy Pods Resources */,
+				D7F84A5D6337A383571B7216 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -705,6 +773,7 @@
 				TargetAttributes = {
 					993EBD6B1C87E65C007B6399 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 777CEHTN68;
 					};
 					993EBD841C87E65C007B6399 = {
 						CreatedOnToolsVersion = 7.2;
@@ -794,6 +863,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D7F84A5D6337A383571B7216 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -802,6 +886,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				993EBDF71C87EF28007B6399 /* ControllerModel.m in Sources */,
+				99D90C001C89F0CD001C36B1 /* Gauge.m in Sources */,
 				993EBDF11C87EE82007B6399 /* OrderVC.m in Sources */,
 				993EBDE51C87EE12007B6399 /* TabBar.m in Sources */,
 				993EBDD61C87ED21007B6399 /* BaseModel.m in Sources */,
@@ -810,6 +895,7 @@
 				993EBDFD1C87F0F0007B6399 /* NavigationController.m in Sources */,
 				993EBDE21C87EDAD007B6399 /* TabbarVC.m in Sources */,
 				993EBDD91C87ED33007B6399 /* BaseView.m in Sources */,
+				99969C8A1C8D4E23008BD7D5 /* AppDelegateHelper.m in Sources */,
 				993EBDCD1C87ECE8007B6399 /* BaseAPI.m in Sources */,
 				993EBDEB1C87EE60007B6399 /* HomeVC.m in Sources */,
 				993EBDF41C87EE97007B6399 /* ShopVC.m in Sources */,
@@ -817,9 +903,12 @@
 				9977F3EA1C8816D7009C9306 /* UIImage+IconFont.m in Sources */,
 				993EBDE81C87EE2D007B6399 /* NavigationBar.m in Sources */,
 				99D90BF51C8953FF001C36B1 /* SecondVC.m in Sources */,
+				99E9DCF21C8AA1DC001FC5AC /* DialView.m in Sources */,
+				99D90BFC1C89E174001C36B1 /* ColorConfiger.m in Sources */,
 				993EBDEE1C87EE71007B6399 /* MineVC.m in Sources */,
 				993EBD711C87E65C007B6399 /* main.m in Sources */,
 				993EBDD31C87ED14007B6399 /* BaseHelper.m in Sources */,
+				99D90BF91C89DFDF001C36B1 /* UIColor+Tools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -961,9 +1050,15 @@
 			baseConfigurationReference = 3B3E16A527547F3C51F3B2C4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YMAPP/YMAPP.pch";
 				INFOPLIST_FILE = YMApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ym.YMApp;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YMApp/Library/TalkingData",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liu.YMAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -973,9 +1068,15 @@
 			baseConfigurationReference = E39AEDFC752ECCD967068FD4 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YMAPP/YMAPP.pch";
 				INFOPLIST_FILE = YMApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ym.YMApp;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YMApp/Library/TalkingData",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liu.YMAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
