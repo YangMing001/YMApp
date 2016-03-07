@@ -42,8 +42,6 @@
 		99D90BF51C8953FF001C36B1 /* SecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D90BF41C8953FF001C36B1 /* SecondVC.m */; };
 		99D90BF91C89DFDF001C36B1 /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D90BF81C89DFDF001C36B1 /* UIColor+Tools.m */; };
 		99D90BFC1C89E174001C36B1 /* ColorConfiger.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D90BFB1C89E174001C36B1 /* ColorConfiger.m */; };
-		99D90C001C89F0CD001C36B1 /* Gauge.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D90BFF1C89F0CD001C36B1 /* Gauge.m */; };
-		99E9DCF21C8AA1DC001FC5AC /* DialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E9DCF11C8AA1DC001FC5AC /* DialView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,10 +132,6 @@
 		99D90BFA1C89E174001C36B1 /* ColorConfiger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorConfiger.h; sourceTree = "<group>"; };
 		99D90BFB1C89E174001C36B1 /* ColorConfiger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorConfiger.m; sourceTree = "<group>"; };
 		99D90BFD1C89E613001C36B1 /* YMAPP.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAPP.pch; sourceTree = "<group>"; };
-		99D90BFE1C89F0CD001C36B1 /* Gauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gauge.h; sourceTree = "<group>"; };
-		99D90BFF1C89F0CD001C36B1 /* Gauge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gauge.m; sourceTree = "<group>"; };
-		99E9DCF01C8AA1DC001FC5AC /* DialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialView.h; sourceTree = "<group>"; };
-		99E9DCF11C8AA1DC001FC5AC /* DialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialView.m; sourceTree = "<group>"; };
 		E39AEDFC752ECCD967068FD4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -379,10 +373,6 @@
 		993EBDAE1C87ECA2007B6399 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				99D90BFE1C89F0CD001C36B1 /* Gauge.h */,
-				99D90BFF1C89F0CD001C36B1 /* Gauge.m */,
-				99E9DCF01C8AA1DC001FC5AC /* DialView.h */,
-				99E9DCF11C8AA1DC001FC5AC /* DialView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -886,7 +876,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				993EBDF71C87EF28007B6399 /* ControllerModel.m in Sources */,
-				99D90C001C89F0CD001C36B1 /* Gauge.m in Sources */,
 				993EBDF11C87EE82007B6399 /* OrderVC.m in Sources */,
 				993EBDE51C87EE12007B6399 /* TabBar.m in Sources */,
 				993EBDD61C87ED21007B6399 /* BaseModel.m in Sources */,
@@ -903,7 +892,6 @@
 				9977F3EA1C8816D7009C9306 /* UIImage+IconFont.m in Sources */,
 				993EBDE81C87EE2D007B6399 /* NavigationBar.m in Sources */,
 				99D90BF51C8953FF001C36B1 /* SecondVC.m in Sources */,
-				99E9DCF21C8AA1DC001FC5AC /* DialView.m in Sources */,
 				99D90BFC1C89E174001C36B1 /* ColorConfiger.m in Sources */,
 				993EBDEE1C87EE71007B6399 /* MineVC.m in Sources */,
 				993EBD711C87E65C007B6399 /* main.m in Sources */,

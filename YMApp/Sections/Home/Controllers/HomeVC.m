@@ -8,7 +8,6 @@
 
 #import "HomeVC.h"
 #import "SecondVC.h"
-#import "DialView.h"
 
 @interface HomeVC ()
 
@@ -19,11 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navBar.leftType = NavBarLeftTypeDefault;
-    DialView *dial = [[DialView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    dial.backgroundColor = [UIColor redColor];
-    [self.view addSubview:dial];
-    BLogWarn(@"dadadad");
-    BLogError(@"---------");
     [[CrashReporter sharedInstance] setSceneTag:11420];
 }
 
@@ -34,9 +28,6 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     SecondVC *vc = [SecondVC new];
     [self.navigationController pushViewController:vc animated:YES];
-    
-    NSArray *a = [NSArray array];
-//    a[10];
 }
 
 /*
