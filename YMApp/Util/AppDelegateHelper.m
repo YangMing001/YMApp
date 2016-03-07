@@ -20,7 +20,7 @@
     //设置Bugly
     [[CrashReporter sharedInstance] enableLog:YES];
     [[CrashReporter sharedInstance] installWithAppId:BuglyKey];
-    [BuglyLog initLogger:(BLYLogLevelWarn) consolePrint:YES];
+    [BuglyLog initLogger:(BLYLogLevelWarn) consolePrint:!PAT];
 }
 
 

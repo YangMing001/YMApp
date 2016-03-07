@@ -39,6 +39,9 @@
 		993EBDFD1C87F0F0007B6399 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993EBDFC1C87F0F0007B6399 /* NavigationController.m */; };
 		9977F3EA1C8816D7009C9306 /* UIImage+IconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 9977F3E91C8816D7009C9306 /* UIImage+IconFont.m */; };
 		99969C8A1C8D4E23008BD7D5 /* AppDelegateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 99969C891C8D4E23008BD7D5 /* AppDelegateHelper.m */; };
+		99969C8D1C8D6487008BD7D5 /* DefaultConf.m in Sources */ = {isa = PBXBuildFile; fileRef = 99969C8C1C8D6487008BD7D5 /* DefaultConf.m */; };
+		99969C901C8D65B8008BD7D5 /* AppKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 99969C8F1C8D65B8008BD7D5 /* AppKey.m */; };
+		99969C931C8D6672008BD7D5 /* NotificationConf.m in Sources */ = {isa = PBXBuildFile; fileRef = 99969C921C8D6672008BD7D5 /* NotificationConf.m */; };
 		99D90BF51C8953FF001C36B1 /* SecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D90BF41C8953FF001C36B1 /* SecondVC.m */; };
 		99D90BF91C89DFDF001C36B1 /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D90BF81C89DFDF001C36B1 /* UIColor+Tools.m */; };
 		99D90BFC1C89E174001C36B1 /* ColorConfiger.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D90BFB1C89E174001C36B1 /* ColorConfiger.m */; };
@@ -118,15 +121,18 @@
 		993EBDFC1C87F0F0007B6399 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		9977F3E81C8816D7009C9306 /* UIImage+IconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+IconFont.h"; sourceTree = "<group>"; };
 		9977F3E91C8816D7009C9306 /* UIImage+IconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+IconFont.m"; sourceTree = "<group>"; };
-		9977F3EB1C882919009C9306 /* DefaultSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultSetting.h; sourceTree = "<group>"; };
-		99969C871C8D4CBF008BD7D5 /* APPKEY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPKEY.h; sourceTree = "<group>"; };
 		99969C881C8D4E23008BD7D5 /* AppDelegateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegateHelper.h; sourceTree = "<group>"; };
 		99969C891C8D4E23008BD7D5 /* AppDelegateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateHelper.m; sourceTree = "<group>"; };
+		99969C8B1C8D6487008BD7D5 /* DefaultConf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultConf.h; sourceTree = "<group>"; };
+		99969C8C1C8D6487008BD7D5 /* DefaultConf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultConf.m; sourceTree = "<group>"; };
+		99969C8E1C8D65B8008BD7D5 /* AppKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppKey.h; sourceTree = "<group>"; };
+		99969C8F1C8D65B8008BD7D5 /* AppKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppKey.m; sourceTree = "<group>"; };
+		99969C911C8D6672008BD7D5 /* NotificationConf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationConf.h; sourceTree = "<group>"; };
+		99969C921C8D6672008BD7D5 /* NotificationConf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationConf.m; sourceTree = "<group>"; };
 		99D90BF11C893D7E001C36B1 /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		99D90BF21C895311001C36B1 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		99D90BF31C8953FF001C36B1 /* SecondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondVC.h; sourceTree = "<group>"; };
 		99D90BF41C8953FF001C36B1 /* SecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondVC.m; sourceTree = "<group>"; };
-		99D90BF61C896FD7001C36B1 /* NotificationDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationDefine.h; sourceTree = "<group>"; };
 		99D90BF71C89DFDF001C36B1 /* UIColor+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
 		99D90BF81C89DFDF001C36B1 /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
 		99D90BFA1C89E174001C36B1 /* ColorConfiger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorConfiger.h; sourceTree = "<group>"; };
@@ -604,11 +610,14 @@
 		993EBDCA1C87ECA2007B6399 /* Macros */ = {
 			isa = PBXGroup;
 			children = (
-				9977F3EB1C882919009C9306 /* DefaultSetting.h */,
-				99D90BF11C893D7E001C36B1 /* Tools.h */,
 				99D90BF21C895311001C36B1 /* Define.h */,
-				99D90BF61C896FD7001C36B1 /* NotificationDefine.h */,
-				99969C871C8D4CBF008BD7D5 /* APPKEY.h */,
+				99D90BF11C893D7E001C36B1 /* Tools.h */,
+				99969C8B1C8D6487008BD7D5 /* DefaultConf.h */,
+				99969C8C1C8D6487008BD7D5 /* DefaultConf.m */,
+				99969C8E1C8D65B8008BD7D5 /* AppKey.h */,
+				99969C8F1C8D65B8008BD7D5 /* AppKey.m */,
+				99969C911C8D6672008BD7D5 /* NotificationConf.h */,
+				99969C921C8D6672008BD7D5 /* NotificationConf.m */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -889,12 +898,15 @@
 				993EBDEB1C87EE60007B6399 /* HomeVC.m in Sources */,
 				993EBDF41C87EE97007B6399 /* ShopVC.m in Sources */,
 				993EBDD01C87ED00007B6399 /* BaseController.m in Sources */,
+				99969C8D1C8D6487008BD7D5 /* DefaultConf.m in Sources */,
 				9977F3EA1C8816D7009C9306 /* UIImage+IconFont.m in Sources */,
+				99969C931C8D6672008BD7D5 /* NotificationConf.m in Sources */,
 				993EBDE81C87EE2D007B6399 /* NavigationBar.m in Sources */,
 				99D90BF51C8953FF001C36B1 /* SecondVC.m in Sources */,
 				99D90BFC1C89E174001C36B1 /* ColorConfiger.m in Sources */,
 				993EBDEE1C87EE71007B6399 /* MineVC.m in Sources */,
 				993EBD711C87E65C007B6399 /* main.m in Sources */,
+				99969C901C8D65B8008BD7D5 /* AppKey.m in Sources */,
 				993EBDD31C87ED14007B6399 /* BaseHelper.m in Sources */,
 				99D90BF91C89DFDF001C36B1 /* UIColor+Tools.m in Sources */,
 			);

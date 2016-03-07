@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import "DefaultSetting.h"
 
 @interface BaseHelper : NSObject
 

@@ -9,9 +9,13 @@
 #ifndef Define_h
 #define Define_h
 
-#import "DefaultSetting.h"
 #import "Tools.h"
-#import "NotificationDefine.h"
-#import "APPKEY.h"
+
+/**
+ 为了方便 将部分宏定义修改为 extern 类型
+ */
+#import "DefaultConf.h"
+#import "NotificationConf.h"
+#import "AppKey.h"
 
 #endif /* Define_h */
