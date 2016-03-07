@@ -8,6 +8,12 @@
 
 #import "MineVC.h"
 
+#import "InvocationOperation.h"
+#import "BlockOperation.h"
+
+#import "NonConcurrentOperation.h"
+#import "ConCurrentOperation.h"
+
 @interface MineVC ()
 
 @end
@@ -16,8 +22,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    [self configData];
+    [self configUI];
+}
+
+/**配置数据*/
+- (void)configData{
+    /**简单 InvocationOperation 封装*/
+//    NSInvocationOperation *op = [[InvocationOperation alloc] invocationOperationWithData:@"zz"];
+//    [op start];
+//    NSInvocationOperation *op1 = [[InvocationOperation alloc] invocationOperationWithData:@"zz" userInfo:@""];
+//    [op1 start];
+
+//    NSBlockOperation *blockOp = [[BlockOperation alloc] blockOperation];
+//    [blockOp  start];
+    
+    
+//    NonConcurrentOperation *nonConOp = [[NonConcurrentOperation alloc] initWithData:@"cc"];
+//    [nonConOp start];
+    
+//    ConCurrentOperation *conOp = [[ConCurrentOperation alloc] init];
+//    [conOp start];
+}
+
+/**配置UI*/
+- (void)configUI{
     self.navBar.leftType = NavBarLeftTypeDefault;
 }
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

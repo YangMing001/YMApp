@@ -16,12 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self configUI];
-    [self configData];
+    [self configBaseUI];
+    [self configBaseData];
 }
 
 /**配置数据*/
-- (void)configData{
+- (void)configBaseData{
     _navBar.leftType = NavBarLeftTypeBack;
 }
 
@@ -36,7 +36,7 @@
 }
 
 /**配置UI*/
-- (void)configUI{
+- (void)configBaseUI{
     self.view.backgroundColor = [ColorConfiger colorViewBG];
     _navBar = [NavigationBar new];
     _navBar.delegate = self;

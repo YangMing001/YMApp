@@ -42,9 +42,13 @@
 		99969C8D1C8D6487008BD7D5 /* DefaultConf.m in Sources */ = {isa = PBXBuildFile; fileRef = 99969C8C1C8D6487008BD7D5 /* DefaultConf.m */; };
 		99969C901C8D65B8008BD7D5 /* AppKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 99969C8F1C8D65B8008BD7D5 /* AppKey.m */; };
 		99969C931C8D6672008BD7D5 /* NotificationConf.m in Sources */ = {isa = PBXBuildFile; fileRef = 99969C921C8D6672008BD7D5 /* NotificationConf.m */; };
+		99969C961C8D6CBD008BD7D5 /* ColorConfiger.m in Sources */ = {isa = PBXBuildFile; fileRef = 99969C941C8D6CBD008BD7D5 /* ColorConfiger.m */; };
+		99969C991C8D8364008BD7D5 /* InvocationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 99969C981C8D8364008BD7D5 /* InvocationOperation.m */; };
+		99969C9C1C8D86C3008BD7D5 /* BlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 99969C9B1C8D86C3008BD7D5 /* BlockOperation.m */; };
+		99969C9F1C8D89D1008BD7D5 /* NonConcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 99969C9E1C8D89D1008BD7D5 /* NonConcurrentOperation.m */; };
+		99969CA21C8D8C85008BD7D5 /* ConCurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 99969CA11C8D8C85008BD7D5 /* ConCurrentOperation.m */; };
 		99D90BF51C8953FF001C36B1 /* SecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D90BF41C8953FF001C36B1 /* SecondVC.m */; };
 		99D90BF91C89DFDF001C36B1 /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D90BF81C89DFDF001C36B1 /* UIColor+Tools.m */; };
-		99D90BFC1C89E174001C36B1 /* ColorConfiger.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D90BFB1C89E174001C36B1 /* ColorConfiger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,14 +133,22 @@
 		99969C8F1C8D65B8008BD7D5 /* AppKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppKey.m; sourceTree = "<group>"; };
 		99969C911C8D6672008BD7D5 /* NotificationConf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationConf.h; sourceTree = "<group>"; };
 		99969C921C8D6672008BD7D5 /* NotificationConf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationConf.m; sourceTree = "<group>"; };
+		99969C941C8D6CBD008BD7D5 /* ColorConfiger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorConfiger.m; sourceTree = "<group>"; };
+		99969C951C8D6CBD008BD7D5 /* ColorConfiger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorConfiger.h; sourceTree = "<group>"; };
+		99969C971C8D8364008BD7D5 /* InvocationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvocationOperation.h; sourceTree = "<group>"; };
+		99969C981C8D8364008BD7D5 /* InvocationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvocationOperation.m; sourceTree = "<group>"; };
+		99969C9A1C8D86C3008BD7D5 /* BlockOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockOperation.h; sourceTree = "<group>"; };
+		99969C9B1C8D86C3008BD7D5 /* BlockOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockOperation.m; sourceTree = "<group>"; };
+		99969C9D1C8D89D1008BD7D5 /* NonConcurrentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonConcurrentOperation.h; sourceTree = "<group>"; };
+		99969C9E1C8D89D1008BD7D5 /* NonConcurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonConcurrentOperation.m; sourceTree = "<group>"; };
+		99969CA01C8D8C85008BD7D5 /* ConCurrentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConCurrentOperation.h; sourceTree = "<group>"; };
+		99969CA11C8D8C85008BD7D5 /* ConCurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConCurrentOperation.m; sourceTree = "<group>"; };
 		99D90BF11C893D7E001C36B1 /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		99D90BF21C895311001C36B1 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		99D90BF31C8953FF001C36B1 /* SecondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondVC.h; sourceTree = "<group>"; };
 		99D90BF41C8953FF001C36B1 /* SecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondVC.m; sourceTree = "<group>"; };
 		99D90BF71C89DFDF001C36B1 /* UIColor+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
 		99D90BF81C89DFDF001C36B1 /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
-		99D90BFA1C89E174001C36B1 /* ColorConfiger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorConfiger.h; sourceTree = "<group>"; };
-		99D90BFB1C89E174001C36B1 /* ColorConfiger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorConfiger.m; sourceTree = "<group>"; };
 		99D90BFD1C89E613001C36B1 /* YMAPP.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAPP.pch; sourceTree = "<group>"; };
 		E39AEDFC752ECCD967068FD4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -461,6 +473,14 @@
 		993EBDB81C87ECA2007B6399 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				99969C971C8D8364008BD7D5 /* InvocationOperation.h */,
+				99969C981C8D8364008BD7D5 /* InvocationOperation.m */,
+				99969C9A1C8D86C3008BD7D5 /* BlockOperation.h */,
+				99969C9B1C8D86C3008BD7D5 /* BlockOperation.m */,
+				99969C9D1C8D89D1008BD7D5 /* NonConcurrentOperation.h */,
+				99969C9E1C8D89D1008BD7D5 /* NonConcurrentOperation.m */,
+				99969CA01C8D8C85008BD7D5 /* ConCurrentOperation.h */,
+				99969CA11C8D8C85008BD7D5 /* ConCurrentOperation.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -580,8 +600,6 @@
 		993EBDC71C87ECA2007B6399 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				99D90BFA1C89E174001C36B1 /* ColorConfiger.h */,
-				99D90BFB1C89E174001C36B1 /* ColorConfiger.m */,
 				99969C881C8D4E23008BD7D5 /* AppDelegateHelper.h */,
 				99969C891C8D4E23008BD7D5 /* AppDelegateHelper.m */,
 			);
@@ -610,6 +628,8 @@
 		993EBDCA1C87ECA2007B6399 /* Macros */ = {
 			isa = PBXGroup;
 			children = (
+				99969C941C8D6CBD008BD7D5 /* ColorConfiger.m */,
+				99969C951C8D6CBD008BD7D5 /* ColorConfiger.h */,
 				99D90BF21C895311001C36B1 /* Define.h */,
 				99D90BF11C893D7E001C36B1 /* Tools.h */,
 				99969C8B1C8D6487008BD7D5 /* DefaultConf.h */,
@@ -895,19 +915,23 @@
 				993EBDD91C87ED33007B6399 /* BaseView.m in Sources */,
 				99969C8A1C8D4E23008BD7D5 /* AppDelegateHelper.m in Sources */,
 				993EBDCD1C87ECE8007B6399 /* BaseAPI.m in Sources */,
+				99969C991C8D8364008BD7D5 /* InvocationOperation.m in Sources */,
 				993EBDEB1C87EE60007B6399 /* HomeVC.m in Sources */,
 				993EBDF41C87EE97007B6399 /* ShopVC.m in Sources */,
+				99969C9F1C8D89D1008BD7D5 /* NonConcurrentOperation.m in Sources */,
+				99969C9C1C8D86C3008BD7D5 /* BlockOperation.m in Sources */,
 				993EBDD01C87ED00007B6399 /* BaseController.m in Sources */,
 				99969C8D1C8D6487008BD7D5 /* DefaultConf.m in Sources */,
+				99969C961C8D6CBD008BD7D5 /* ColorConfiger.m in Sources */,
 				9977F3EA1C8816D7009C9306 /* UIImage+IconFont.m in Sources */,
 				99969C931C8D6672008BD7D5 /* NotificationConf.m in Sources */,
 				993EBDE81C87EE2D007B6399 /* NavigationBar.m in Sources */,
 				99D90BF51C8953FF001C36B1 /* SecondVC.m in Sources */,
-				99D90BFC1C89E174001C36B1 /* ColorConfiger.m in Sources */,
 				993EBDEE1C87EE71007B6399 /* MineVC.m in Sources */,
 				993EBD711C87E65C007B6399 /* main.m in Sources */,
 				99969C901C8D65B8008BD7D5 /* AppKey.m in Sources */,
 				993EBDD31C87ED14007B6399 /* BaseHelper.m in Sources */,
+				99969CA21C8D8C85008BD7D5 /* ConCurrentOperation.m in Sources */,
 				99D90BF91C89DFDF001C36B1 /* UIColor+Tools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
