@@ -12,6 +12,9 @@
 		991D2CC91C8E66E00030E96E /* ConCurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 991D2CC31C8E66E00030E96E /* ConCurrentOperation.m */; };
 		991D2CCA1C8E66E00030E96E /* InvocationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 991D2CC51C8E66E00030E96E /* InvocationOperation.m */; };
 		991D2CCB1C8E66E00030E96E /* NonConcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 991D2CC71C8E66E00030E96E /* NonConcurrentOperation.m */; };
+		991D2CCF1C8E759F0030E96E /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 991D2CCE1C8E759F0030E96E /* DBManager.m */; };
+		991D2CD21C8E7E4C0030E96E /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 991D2CD11C8E7E4C0030E96E /* PersonModel.m */; };
+		991D2CD51C8E809A0030E96E /* StudentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 991D2CD41C8E809A0030E96E /* StudentModel.m */; };
 		993C4DD41C8D499F00C0E8A9 /* libTalkingData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 993C4DD21C8D499F00C0E8A9 /* libTalkingData.a */; };
 		993C4DD61C8D4A1F00C0E8A9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993C4DD51C8D4A1F00C0E8A9 /* Security.framework */; };
 		993C4DD81C8D4A2B00C0E8A9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993C4DD71C8D4A2B00C0E8A9 /* CoreTelephony.framework */; };
@@ -79,6 +82,12 @@
 		991D2CC51C8E66E00030E96E /* InvocationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvocationOperation.m; sourceTree = "<group>"; };
 		991D2CC61C8E66E00030E96E /* NonConcurrentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonConcurrentOperation.h; sourceTree = "<group>"; };
 		991D2CC71C8E66E00030E96E /* NonConcurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonConcurrentOperation.m; sourceTree = "<group>"; };
+		991D2CCD1C8E759F0030E96E /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		991D2CCE1C8E759F0030E96E /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		991D2CD01C8E7E4C0030E96E /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
+		991D2CD11C8E7E4C0030E96E /* PersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
+		991D2CD31C8E809A0030E96E /* StudentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentModel.h; sourceTree = "<group>"; };
+		991D2CD41C8E809A0030E96E /* StudentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentModel.m; sourceTree = "<group>"; };
 		993C4DD21C8D499F00C0E8A9 /* libTalkingData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTalkingData.a; sourceTree = "<group>"; };
 		993C4DD31C8D499F00C0E8A9 /* TalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingData.h; sourceTree = "<group>"; };
 		993C4DD51C8D4A1F00C0E8A9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -208,6 +217,15 @@
 				991D2CC71C8E66E00030E96E /* NonConcurrentOperation.m */,
 			);
 			path = Operations;
+			sourceTree = "<group>";
+		};
+		991D2CCC1C8E75240030E96E /* DBManager */ = {
+			isa = PBXGroup;
+			children = (
+				991D2CCD1C8E759F0030E96E /* DBManager.h */,
+				991D2CCE1C8E759F0030E96E /* DBManager.m */,
+			);
+			path = DBManager;
 			sourceTree = "<group>";
 		};
 		993C4DD11C8D499F00C0E8A9 /* TalkingData */ = {
@@ -496,6 +514,10 @@
 		993EBDB91C87ECA2007B6399 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				991D2CD01C8E7E4C0030E96E /* PersonModel.h */,
+				991D2CD11C8E7E4C0030E96E /* PersonModel.m */,
+				991D2CD31C8E809A0030E96E /* StudentModel.h */,
+				991D2CD41C8E809A0030E96E /* StudentModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -608,6 +630,7 @@
 		993EBDC71C87ECA2007B6399 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				991D2CCC1C8E75240030E96E /* DBManager */,
 				99969C881C8D4E23008BD7D5 /* AppDelegateHelper.h */,
 				99969C891C8D4E23008BD7D5 /* AppDelegateHelper.m */,
 			);
@@ -913,6 +936,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				993EBDF71C87EF28007B6399 /* ControllerModel.m in Sources */,
+				991D2CD51C8E809A0030E96E /* StudentModel.m in Sources */,
 				993EBDF11C87EE82007B6399 /* OrderVC.m in Sources */,
 				993EBDE51C87EE12007B6399 /* TabBar.m in Sources */,
 				993EBDD61C87ED21007B6399 /* BaseModel.m in Sources */,
@@ -921,9 +945,11 @@
 				993EBDFD1C87F0F0007B6399 /* NavigationController.m in Sources */,
 				993EBDE21C87EDAD007B6399 /* TabbarVC.m in Sources */,
 				993EBDD91C87ED33007B6399 /* BaseView.m in Sources */,
+				991D2CCF1C8E759F0030E96E /* DBManager.m in Sources */,
 				991D2CC81C8E66E00030E96E /* BlockOperation.m in Sources */,
 				991D2CCB1C8E66E00030E96E /* NonConcurrentOperation.m in Sources */,
 				99969C8A1C8D4E23008BD7D5 /* AppDelegateHelper.m in Sources */,
+				991D2CD21C8E7E4C0030E96E /* PersonModel.m in Sources */,
 				993EBDCD1C87ECE8007B6399 /* BaseAPI.m in Sources */,
 				993EBDEB1C87EE60007B6399 /* HomeVC.m in Sources */,
 				993EBDF41C87EE97007B6399 /* ShopVC.m in Sources */,

@@ -14,6 +14,8 @@
 #import "NonConcurrentOperation.h"
 #import "ConCurrentOperation.h"
 
+#import "DBManager.h"
+
 @interface MineVC ()
 
 @end
@@ -51,7 +53,10 @@
     self.navBar.leftType = NavBarLeftTypeDefault;
 }
 
-
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    DBManager *manager = [DBManager manager];
+    [manager newDBVersionInit];
+}
 
 
 - (void)didReceiveMemoryWarning {
