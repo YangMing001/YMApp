@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		87222A0834C1AF04FB014EEE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27182D56CAAC97867923A51E /* libPods.a */; };
+		991D2CC81C8E66E00030E96E /* BlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 991D2CC11C8E66E00030E96E /* BlockOperation.m */; };
+		991D2CC91C8E66E00030E96E /* ConCurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 991D2CC31C8E66E00030E96E /* ConCurrentOperation.m */; };
+		991D2CCA1C8E66E00030E96E /* InvocationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 991D2CC51C8E66E00030E96E /* InvocationOperation.m */; };
+		991D2CCB1C8E66E00030E96E /* NonConcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 991D2CC71C8E66E00030E96E /* NonConcurrentOperation.m */; };
 		993C4DD41C8D499F00C0E8A9 /* libTalkingData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 993C4DD21C8D499F00C0E8A9 /* libTalkingData.a */; };
 		993C4DD61C8D4A1F00C0E8A9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993C4DD51C8D4A1F00C0E8A9 /* Security.framework */; };
 		993C4DD81C8D4A2B00C0E8A9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993C4DD71C8D4A2B00C0E8A9 /* CoreTelephony.framework */; };
@@ -43,10 +47,6 @@
 		99969C901C8D65B8008BD7D5 /* AppKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 99969C8F1C8D65B8008BD7D5 /* AppKey.m */; };
 		99969C931C8D6672008BD7D5 /* NotificationConf.m in Sources */ = {isa = PBXBuildFile; fileRef = 99969C921C8D6672008BD7D5 /* NotificationConf.m */; };
 		99969C961C8D6CBD008BD7D5 /* ColorConfiger.m in Sources */ = {isa = PBXBuildFile; fileRef = 99969C941C8D6CBD008BD7D5 /* ColorConfiger.m */; };
-		99969C991C8D8364008BD7D5 /* InvocationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 99969C981C8D8364008BD7D5 /* InvocationOperation.m */; };
-		99969C9C1C8D86C3008BD7D5 /* BlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 99969C9B1C8D86C3008BD7D5 /* BlockOperation.m */; };
-		99969C9F1C8D89D1008BD7D5 /* NonConcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 99969C9E1C8D89D1008BD7D5 /* NonConcurrentOperation.m */; };
-		99969CA21C8D8C85008BD7D5 /* ConCurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 99969CA11C8D8C85008BD7D5 /* ConCurrentOperation.m */; };
 		99D90BF51C8953FF001C36B1 /* SecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D90BF41C8953FF001C36B1 /* SecondVC.m */; };
 		99D90BF91C89DFDF001C36B1 /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D90BF81C89DFDF001C36B1 /* UIColor+Tools.m */; };
 /* End PBXBuildFile section */
@@ -71,6 +71,14 @@
 /* Begin PBXFileReference section */
 		27182D56CAAC97867923A51E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3E16A527547F3C51F3B2C4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		991D2CC01C8E66E00030E96E /* BlockOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockOperation.h; sourceTree = "<group>"; };
+		991D2CC11C8E66E00030E96E /* BlockOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockOperation.m; sourceTree = "<group>"; };
+		991D2CC21C8E66E00030E96E /* ConCurrentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConCurrentOperation.h; sourceTree = "<group>"; };
+		991D2CC31C8E66E00030E96E /* ConCurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConCurrentOperation.m; sourceTree = "<group>"; };
+		991D2CC41C8E66E00030E96E /* InvocationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvocationOperation.h; sourceTree = "<group>"; };
+		991D2CC51C8E66E00030E96E /* InvocationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvocationOperation.m; sourceTree = "<group>"; };
+		991D2CC61C8E66E00030E96E /* NonConcurrentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonConcurrentOperation.h; sourceTree = "<group>"; };
+		991D2CC71C8E66E00030E96E /* NonConcurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonConcurrentOperation.m; sourceTree = "<group>"; };
 		993C4DD21C8D499F00C0E8A9 /* libTalkingData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTalkingData.a; sourceTree = "<group>"; };
 		993C4DD31C8D499F00C0E8A9 /* TalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingData.h; sourceTree = "<group>"; };
 		993C4DD51C8D4A1F00C0E8A9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -135,14 +143,6 @@
 		99969C921C8D6672008BD7D5 /* NotificationConf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationConf.m; sourceTree = "<group>"; };
 		99969C941C8D6CBD008BD7D5 /* ColorConfiger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorConfiger.m; sourceTree = "<group>"; };
 		99969C951C8D6CBD008BD7D5 /* ColorConfiger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorConfiger.h; sourceTree = "<group>"; };
-		99969C971C8D8364008BD7D5 /* InvocationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvocationOperation.h; sourceTree = "<group>"; };
-		99969C981C8D8364008BD7D5 /* InvocationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvocationOperation.m; sourceTree = "<group>"; };
-		99969C9A1C8D86C3008BD7D5 /* BlockOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockOperation.h; sourceTree = "<group>"; };
-		99969C9B1C8D86C3008BD7D5 /* BlockOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockOperation.m; sourceTree = "<group>"; };
-		99969C9D1C8D89D1008BD7D5 /* NonConcurrentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonConcurrentOperation.h; sourceTree = "<group>"; };
-		99969C9E1C8D89D1008BD7D5 /* NonConcurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonConcurrentOperation.m; sourceTree = "<group>"; };
-		99969CA01C8D8C85008BD7D5 /* ConCurrentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConCurrentOperation.h; sourceTree = "<group>"; };
-		99969CA11C8D8C85008BD7D5 /* ConCurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConCurrentOperation.m; sourceTree = "<group>"; };
 		99D90BF11C893D7E001C36B1 /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		99D90BF21C895311001C36B1 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		99D90BF31C8953FF001C36B1 /* SecondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondVC.h; sourceTree = "<group>"; };
@@ -193,6 +193,21 @@
 				E39AEDFC752ECCD967068FD4 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		991D2CBF1C8E66E00030E96E /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				991D2CC01C8E66E00030E96E /* BlockOperation.h */,
+				991D2CC11C8E66E00030E96E /* BlockOperation.m */,
+				991D2CC21C8E66E00030E96E /* ConCurrentOperation.h */,
+				991D2CC31C8E66E00030E96E /* ConCurrentOperation.m */,
+				991D2CC41C8E66E00030E96E /* InvocationOperation.h */,
+				991D2CC51C8E66E00030E96E /* InvocationOperation.m */,
+				991D2CC61C8E66E00030E96E /* NonConcurrentOperation.h */,
+				991D2CC71C8E66E00030E96E /* NonConcurrentOperation.m */,
+			);
+			path = Operations;
 			sourceTree = "<group>";
 		};
 		993C4DD11C8D499F00C0E8A9 /* TalkingData */ = {
@@ -473,14 +488,7 @@
 		993EBDB81C87ECA2007B6399 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				99969C971C8D8364008BD7D5 /* InvocationOperation.h */,
-				99969C981C8D8364008BD7D5 /* InvocationOperation.m */,
-				99969C9A1C8D86C3008BD7D5 /* BlockOperation.h */,
-				99969C9B1C8D86C3008BD7D5 /* BlockOperation.m */,
-				99969C9D1C8D89D1008BD7D5 /* NonConcurrentOperation.h */,
-				99969C9E1C8D89D1008BD7D5 /* NonConcurrentOperation.m */,
-				99969CA01C8D8C85008BD7D5 /* ConCurrentOperation.h */,
-				99969CA11C8D8C85008BD7D5 /* ConCurrentOperation.m */,
+				991D2CBF1C8E66E00030E96E /* Operations */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -913,16 +921,16 @@
 				993EBDFD1C87F0F0007B6399 /* NavigationController.m in Sources */,
 				993EBDE21C87EDAD007B6399 /* TabbarVC.m in Sources */,
 				993EBDD91C87ED33007B6399 /* BaseView.m in Sources */,
+				991D2CC81C8E66E00030E96E /* BlockOperation.m in Sources */,
+				991D2CCB1C8E66E00030E96E /* NonConcurrentOperation.m in Sources */,
 				99969C8A1C8D4E23008BD7D5 /* AppDelegateHelper.m in Sources */,
 				993EBDCD1C87ECE8007B6399 /* BaseAPI.m in Sources */,
-				99969C991C8D8364008BD7D5 /* InvocationOperation.m in Sources */,
 				993EBDEB1C87EE60007B6399 /* HomeVC.m in Sources */,
 				993EBDF41C87EE97007B6399 /* ShopVC.m in Sources */,
-				99969C9F1C8D89D1008BD7D5 /* NonConcurrentOperation.m in Sources */,
-				99969C9C1C8D86C3008BD7D5 /* BlockOperation.m in Sources */,
 				993EBDD01C87ED00007B6399 /* BaseController.m in Sources */,
 				99969C8D1C8D6487008BD7D5 /* DefaultConf.m in Sources */,
 				99969C961C8D6CBD008BD7D5 /* ColorConfiger.m in Sources */,
+				991D2CC91C8E66E00030E96E /* ConCurrentOperation.m in Sources */,
 				9977F3EA1C8816D7009C9306 /* UIImage+IconFont.m in Sources */,
 				99969C931C8D6672008BD7D5 /* NotificationConf.m in Sources */,
 				993EBDE81C87EE2D007B6399 /* NavigationBar.m in Sources */,
@@ -931,8 +939,8 @@
 				993EBD711C87E65C007B6399 /* main.m in Sources */,
 				99969C901C8D65B8008BD7D5 /* AppKey.m in Sources */,
 				993EBDD31C87ED14007B6399 /* BaseHelper.m in Sources */,
-				99969CA21C8D8C85008BD7D5 /* ConCurrentOperation.m in Sources */,
 				99D90BF91C89DFDF001C36B1 /* UIColor+Tools.m in Sources */,
+				991D2CCA1C8E66E00030E96E /* InvocationOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
