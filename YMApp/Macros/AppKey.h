@@ -10,7 +10,7 @@
 
 extern NSString *const TalkingDataKey;
 extern NSString *const BuglyKey;
-
+extern NSString *const JPushKey;
 /**第三方 key 管理*/
 @interface AppKey : NSObject
 

@@ -15,9 +15,12 @@
 #import "ConCurrentOperation.h"
 
 #import "DBManager.h"
+#import <CoreLocation/CLLocationManager.h>
 
-@interface MineVC ()
-
+@interface MineVC ()<CLLocationManagerDelegate>
+{
+    CLLocationCoordinate2D l2;
+}
 @end
 
 @implementation MineVC
@@ -46,6 +49,10 @@
     
 //    ConCurrentOperation *conOp = [[ConCurrentOperation alloc] init];
 //    [conOp start];
+    
+    CLLocationManager *locMan = [[CLLocationManager alloc] init];
+    locMan.delegate = self;
+    [locMan requestAlwaysAuthorization];
 }
 
 /**配置UI*/
@@ -54,9 +61,57 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    DBManager *manager = [DBManager manager];
-    [manager newDBVersionInit];
+//    DBManager *manager = [DBManager manager];
+//    [manager newDBVersionInit];
+//    UILocalNotification *locNotfication = [[UILocalNotification alloc] init];
+//    locNotfication.alertTitle = @"title";
+//    locNotfication.alertBody = @"body";
+//    locNotfication.alertAction = @"action";
+//    locNotfication.alertLaunchImage = @"ym1.jpg";
+    
+    [self notificationClicked];
 }
+
+
+- (void)notificationClicked{
+    UILocalNotification *locNotfication = [[UILocalNotification alloc] init];
+    locNotfication.fireDate = [NSDate dateWithTimeIntervalSinceNow:5];
+    //    notification.category = @"INVITE_CATEGORY";
+    locNotfication.timeZone = [NSTimeZone defaultTimeZone];
+    locNotfication.alertTitle = @"title";
+    locNotfication.alertBody = @"body";
+    locNotfication.alertAction = @"action";
+
+    locNotfication.regionTriggersOnce = YES;
+//
+//    locNotfication.region = [[CLCircularRegion alloc]
+//                              initWithCenter:l2
+//                              radius:100
+//                              identifier:@"casda"];
+//    locNotfication.soundName = UILocalNotificationDefaultSoundName;
+    
+    
+    locNotfication.applicationIconBadgeNumber = 1;
+    [[UIApplication sharedApplication] scheduleLocalNotification:locNotfication];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status{
+    BOOL canUseLocationNotifications = (status == kCLAuthorizationStatusAuthorizedAlways);
+}
+
+- (void)locationManagerDidPauseLocationUpdates:(CLLocationManager *)manager{
+    
+}
+
+- (void)locationManagerDidResumeLocationUpdates:(CLLocationManager *)manager{
+    
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations{
+    CLLocation *l = [locations firstObject];
+    l2 = l.coordinate;
+}
+
 
 
 - (void)didReceiveMemoryWarning {

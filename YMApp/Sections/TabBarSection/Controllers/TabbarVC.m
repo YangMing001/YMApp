@@ -24,6 +24,8 @@
     [super viewDidLoad];
     [self configUI];
     
+   
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showTabbar) name:Notification_ShowTabBar object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideTabbar) name:Notification_HideTabBar object:nil];
 }
