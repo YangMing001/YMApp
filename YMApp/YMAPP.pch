@@ -10,7 +10,7 @@
 #define YMAPP_pch
 
 #import <UIKit/UIKit.h>
-#import "ColorConfiger.h"
+#import "UIColor+Configer.h"
 #import "Define.h"
 #import <Bugly/BuglyLog.h>
 #import <Bugly/CrashReporter.h>

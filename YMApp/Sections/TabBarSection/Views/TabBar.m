@@ -27,7 +27,7 @@
 }
 
 - (void)configTabbarWithImages:(NSArray<ControllerModel *> *)images{
-    [self setBackgroundColor:[ColorConfiger colorTabbarBG]];
+    [self setBackgroundColor:[UIColor colorTabbarBG]];
     
     NSInteger imageCount = images.count;
     NSMutableArray *tempBtnArray = [NSMutableArray array];

@@ -57,7 +57,7 @@
     
     vcModel.controller = nav;
     vcModel.normalImage = [FontAwesome imageWithIcon:iconName iconColor:nil iconSize:iconSize_Tabbar];
-    vcModel.selectImage = [FontAwesome imageWithIcon:iconName iconColor:[ColorConfiger colorMain] iconSize:iconSize_Tabbar];
+    vcModel.selectImage = [FontAwesome imageWithIcon:iconName iconColor:[UIColor colorMain] iconSize:iconSize_Tabbar];
     
     UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:@"" image:vcModel.normalImage selectedImage:vcModel.selectImage];
     item.badgeValue = @"13";

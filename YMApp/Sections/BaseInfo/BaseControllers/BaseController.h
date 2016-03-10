@@ -9,11 +9,16 @@
 #import <UIKit/UIKit.h>
 
 #import "NavigationBar.h"
+#import <Masonry.h>
 
 @interface BaseController : UIViewController
 
 @property (nonatomic,strong) NavigationBar *navBar;
+
 @property (nonatomic,getter=isNavBarHide) BOOL navBarHide;
+
+@property (nonatomic,strong) UIView *contentView;
+
 - (void)leftClick;
 - (void)rightClick;
 

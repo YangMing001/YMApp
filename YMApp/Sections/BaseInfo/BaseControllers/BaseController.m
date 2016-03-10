@@ -7,7 +7,6 @@
 //
 
 #import "BaseController.h"
-
 @interface BaseController ()<NavigationBarDelegate>
 
 @end
@@ -37,7 +36,7 @@
 
 /**配置UI*/
 - (void)configBaseUI{
-    self.view.backgroundColor = [ColorConfiger colorViewBG];
+    self.view.backgroundColor = [UIColor colorViewBG];
     _navBar = [NavigationBar new];
     _navBar.delegate = self;
     [self.view addSubview:_navBar];
@@ -50,6 +49,13 @@
     if (self.title) {
         self.navBar.title = self.title;
     }
+    
+//    _contentView = [[UIView alloc] init];
+//    [self.view addSubview:_contentView];
+//    [_contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(_navBar);
+//        make.left.and.right.with.bottom.equalTo(weakSelf.view);
+//    }];
 }
 
 - (void)setNavBarHide:(BOOL)navBarHide{
