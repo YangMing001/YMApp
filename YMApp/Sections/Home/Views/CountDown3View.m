@@ -8,7 +8,7 @@
 
 #import "CountDown3View.h"
 
-NSInteger const _totalCount = 3;
+NSInteger const _totalCount = 0;
 
 @interface CountDown3View ()
 {
@@ -44,6 +44,11 @@ NSInteger const _totalCount = 3;
     self.opaque = NO;
     self.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0];
     
+    [[UIApplication sharedApplication].keyWindow addSubview:self];
+    [self mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo([self superview]);
+    }];
+    
     
 }
 
@@ -62,6 +67,16 @@ NSInteger const _totalCount = 3;
     }
 
     _currentCount = _totalCount;
+    
+    if (_currentCount == 0) {
+        if ([self.delegate respondsToSelector:@selector(countDown3Finished)]) {
+            [self.delegate performSelector:@selector(countDown3Finished)];
+            [self removeFromSuperview];
+            return;
+        }
+    }
+        
+
     _label.text = [@(_currentCount) stringValue];
     _timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(animation) userInfo:nil repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
@@ -93,7 +108,6 @@ NSInteger const _totalCount = 3;
                 }
             }else{
                 strongSelf.label.transform = CGAffineTransformIdentity;
-//                strongSelf.label.alpha = 1;
                 _currentCount --;
                 self.label.text = _currentCount?[@(_currentCount) stringValue]:_finishText;
             }

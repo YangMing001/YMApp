@@ -11,10 +11,8 @@
 #import "ColorConfiger.h"
 @interface WaveButton ()
 {
-
     CADisplayLink *_timer;
     UILabel *_label;
-
 }
 @end
 
@@ -22,19 +20,17 @@
 
 - (instancetype)init{
     if (self = [super init]) {
-        _delayShowTextTimeInterval = 4;
+        _delayShowTextTimeInterval = 0;
     }
     return self;
 }
-
-
 
 - (void)setSelected:(BOOL)selected{
     [super setSelected:selected];
     if (!selected) {
         [self waveAnimationStart];
     }else{
-        [self waveAnimationEnd];
+        [self waveAnimationEnd:_delayShowTextTimeInterval];
     }
 }
 
@@ -42,10 +38,13 @@
  *  水波纹动画开始
  */
 - (void)waveAnimationStart{
+    if (self.selected) {
+        return;
+    }
     [_timer invalidate];
     _label.hidden = YES;
     _timer = [CADisplayLink displayLinkWithTarget:self selector:@selector(waveStar)];
-    _timer.frameInterval = 40;
+    _timer.frameInterval = 60;
     [_timer addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
 }
 
@@ -53,10 +52,12 @@
  *  动画
  */
 - (void)waveStar{
+    
     CALayer *layer = [[CALayer alloc] init];
     layer.cornerRadius = self.bounds.size.width/2;
     layer.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.width);
-    UIColor *color = [UIColor colorNumericalWithRed:arc4random()%255 green:1 blue:arc4random()%255];
+//    UIColor *color = [UIColor colorNumericalWithRed:arc4random()%255 green:1 blue:arc4random()%255];
+    UIColor *color = [UIColor colorMain];
     layer.backgroundColor = color.CGColor;
     [self.layer addSublayer:layer];
     
@@ -94,12 +95,16 @@
 /*
  *  水波纹动画结束
  */
-- (void)waveAnimationEnd{
+- (void)waveAnimationEnd:(NSInteger)delaySeconds{
     [_timer invalidate];
+
+    [_label removeFromSuperview];
+    _label = nil;
+    [[self.layer sublayers] makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
+
 
     if (!_label) {
         _label = [[UILabel alloc] init];
-        
         _label.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.width);
         [_label setText:@"停止"];
         [_label setFont:[UIFont systemFontOfSize:self.bounds.size.width/3]];
@@ -107,17 +112,26 @@
         [_label setTextColor:[UIColor colorMain]];
         [_label setBackgroundColor:[UIColor colorViewBG]];
         [_label setTextAlignment:NSTextAlignmentCenter];
-        
         _label.layer.borderColor = [UIColor colorMain].CGColor;
         _label.layer.borderWidth = 2;
-        
         [self addSubview:_label];
         _label.hidden = YES;
     }
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(_delayShowTextTimeInterval * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [_label setHidden:NO];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delaySeconds * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        _label.hidden = NO;
     });
+}
 
+- (void)willMoveToWindow:(UIWindow *)newWindow{
+    [super willMoveToWindow:newWindow];
+    if (!newWindow) {
+        [self waveAnimationEnd:0];
+    }else{
+        if (!self.selected) {
+            [self waveAnimationStart];
+        }
+    }
 }
 
 @end
